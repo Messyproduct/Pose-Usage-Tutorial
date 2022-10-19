@@ -15,19 +15,19 @@ This is obviously not desirable. So, it in this short write-up I will show you h
 For the sake of this write-up, the source pose armature/meshes will be represented by the color *RED* and the destination armature/meshes will be represented by *BLUE*.
 
 ### Alignment
-First you must align your destination armature to your source armature, this will involve rotating the older format's skeleton 90 degrees forward. The goal is to have both skeletons occupy exactly the same space. Ideally this will be at the scene's origin (Location `x=0 y=0 z=0`) to make the process as simple as possible. 
+First you must align your destination armature to your source armature, this will involve rotating the older format's skeleton 90 degrees forward. The goal is to have both skeletons occupy exactly the same space. Ideally this will be at the scene's origin (Location `x=0 y=0 z=0`) to make the process as simple as possible.
 
 If this is not the case, try lining them up as close as possible; it does not need to be exact, but closer is better.
 
 ![Lining Up the Armatures](https://i.imgur.com/jQaI2sv.png)
 
 ### Applying Transformations / Reparenting
-Once you have lined up your armatures to the best of your ability, apply the transforms. In object mode select all your objects `Shortcut: A Key` And applying the transformations with `Ctrl + A`. 
+Once you have lined up your armatures to the best of your ability, apply the transforms. In object mode select all your objects `Shortcut: A Key` And applying the transformations with `Ctrl + A`.
 
 ![applying transformations](https://i.imgur.com/rGpAkws.png)
 
 Next you will need to reparent the meshes to the source skeleton:
-1.	First select all the meshes of you want to make the pose
+1.	First select all the meshes you want to make the pose
 2.	Select the Source Pose Skeleton
 3.	Right click on the viewport and select `Parent>Armature Deform`
 
